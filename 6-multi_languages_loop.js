@@ -1,11 +1,9 @@
 const messages = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-let result = '';
+let output = '';
 
 for (let i = 0; i < messages.length; i++) {
-  result += messages[i];
-  if (i < messages.length - 1) {
-    result += '\n';
-  }
+  output += messages[i] + (i < messages.length - 1 ? '\n' : '');
 }
 
-console.log(result);
+console.log(output);
+
